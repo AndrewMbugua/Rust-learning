@@ -1,5 +1,5 @@
 fn main(){
-	//number 16000
+	//This is number 16000
 	let binary_num: u64 = 0b011111010000000;
 	let hex_num: u64 = 0x3e80;
 	let octal_num: u64 = 0o37200;
