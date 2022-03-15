@@ -1,5 +1,5 @@
 fn main(){
 
-println!(Rust Language");
+println!("Rust Language");
 
 }
