@@ -1,5 +1,5 @@
 fn main(){
 
-println!("{}", "Rust Languag)
+println!("{}", "Rust Language");
 
 }
