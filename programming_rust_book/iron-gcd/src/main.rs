@@ -22,8 +22,6 @@ fn get_form(_request: &mut Request) -> IronResult<Response> {
                      <button type="submit">Compute GCD</button>
                      </form>
                      "#);
-                     match res {
-                     Ok(response) => {"Success"},
-                     Err(error) => {""}
-                     }}
+                     Ok(response)
+                     }
 
