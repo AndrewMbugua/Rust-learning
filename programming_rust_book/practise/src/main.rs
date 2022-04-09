@@ -1,6 +1,6 @@
 fn main(){
 
-assert_
+assert_eq!()
 
 
 
