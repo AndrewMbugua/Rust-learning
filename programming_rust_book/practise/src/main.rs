@@ -1,6 +1,6 @@
 fn main(){
 
-assert_eq!(2ui6.pow(4),16);
+assert_eq!(2u16.pow(4),16);
 
 
 
