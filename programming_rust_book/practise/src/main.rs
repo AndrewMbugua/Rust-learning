@@ -1,4 +1,4 @@
 fn main(){
 
-assert_eq!(2u16, expression2)
+assert_eq!(2u16_i, expression2)
 }
