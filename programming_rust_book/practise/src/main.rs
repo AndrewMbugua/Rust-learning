@@ -1,4 +1,4 @@
 fn main(){
 
-assert_eq!(2u16_i16 as i8, 2)
+assert_eq!(2u16_i16 as i8, 232_u8)
 }
