@@ -1,6 +1,6 @@
 fn main(){
 
-print!("{}{}",assert_eq!(false as i32, 0));
+assert_eq!(false as i32, 0))
 
 
 }
