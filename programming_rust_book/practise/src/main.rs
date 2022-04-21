@@ -1,8 +1,8 @@
 
 fn main(){
 
-let mut chaos = [3,4,5,5,6];
-println!("{:?}", chaos.sort());
+let mut v = vec![2,3,4,4];
+print!("{:?}", v.iter());
 
 }
 
