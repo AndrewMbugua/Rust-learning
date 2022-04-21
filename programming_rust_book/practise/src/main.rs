@@ -1,8 +1,7 @@
-fn pixel_buffer(rows: usize, cols: usize) -> Vec<u8>{
-    vec![0; rows * cols]
-}
 fn main(){
 
+    let mut vector = Vec::new();
+    let vector_two = Vec![1,2,23,3];
 
 
 }
