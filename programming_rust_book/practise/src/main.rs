@@ -1,9 +1,9 @@
-
+fn pixel_buffer(rows: usize, cols: usize) -> Vec<u8>{
+    vec![0; rows * cols]
+}
 fn main(){
 
-let mut v = vec![2,3,4,4];
-v.push("G");
-print!("{:?}", v);
+
 
 }
 
