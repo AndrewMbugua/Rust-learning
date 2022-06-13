@@ -1,3 +1,5 @@
+use chrono::Utc
+
 fn main() {
-    println!("Hello, world!");
+    println!("{:?}". Utc::now());
 }
