@@ -1,5 +1,9 @@
-use chrono::Utc
+use chrono::Utc;
 
 fn main() {
-    println!("{:?}". Utc::now());
+
+    println!("{:?}",Utc::now());
+
+
+
 }
