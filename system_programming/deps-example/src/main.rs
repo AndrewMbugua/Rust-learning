@@ -1,4 +1,4 @@
-use chrono as time;
+use chrono::Utc as time;
 
 fn main() {
 
