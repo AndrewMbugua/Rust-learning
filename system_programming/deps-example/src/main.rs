@@ -1,8 +1,8 @@
-use chrono::Utc;
+use chrono as time;
 
 fn main() {
 
-    println!("{:?}",Utc::now());
+    println!("{:?}",time::now());
 
 
 
