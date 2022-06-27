@@ -1,18 +1,16 @@
-struct Person{
-    name: String,
-    birth: i32
-}
-
+#[derive(Debug)]
+struct Person {
+      name: Option<String>,
+      birth: i32
+  }
 
 fn main(){
 
-let mut compos = Vec::new();
-compos.push(Person { name: "Andrew".to_string(), birth: 2000 });
+let x = Person {
+    name: Some(String::from("Andrew")), 
+    birth: 20
+};
 
-for compos_ptr in &compos{
+println!("{:?}",x);
 
-println!("{},{}",compos_ptr.name, compos_ptr.birth);
-
-
-}
 }
