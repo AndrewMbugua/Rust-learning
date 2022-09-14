@@ -1,0 +1,13 @@
+Algorithms & Data structures in C
+
+Topics
+
+- D.structures
+- Array
+- Linked lists
+- Stack
+- Queue
+- Tree
+- Algorithms
+- Recursions
+- Sorting
