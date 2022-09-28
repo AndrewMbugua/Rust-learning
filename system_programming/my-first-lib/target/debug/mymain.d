@@ -1,1 +1,0 @@
-/home/andrew/Documents/Rust-learning/system_programming/my-first-lib/target/debug/mymain: /home/andrew/Documents/Rust-learning/system_programming/my-first-lib/src/bin/mymain.rs /home/andrew/Documents/Rust-learning/system_programming/my-first-lib/src/lib.rs
