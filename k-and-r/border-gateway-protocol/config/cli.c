@@ -25,7 +25,7 @@ if(argc == 1){
     info();
 }
 
-if(strcmp(argv[1], "--help") == 0 ){ help(); }
+if(strcmp(argv[1], "--help") == 0) { help(); }
 
 
 }
