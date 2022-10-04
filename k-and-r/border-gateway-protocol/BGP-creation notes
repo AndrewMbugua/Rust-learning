@@ -3,10 +3,10 @@ BGP creation steps
 1. A CLI tool to be used for configuration:
 List options(--help):
 
-1. neighbor configuration
+(a). neighbor configuration
 - neighbor ip_address remote-as  as_number
 
-2. show ip bgp summary
+(b). show ip bgp summary
 x network entries occupying y bytes of memory
 x path entries occupying y bytes of memory
 x network entries
@@ -15,3 +15,7 @@ x network entries
 Neighbor	A.S number	state
 ip_addr1	x		active
 ip_addr2	y		active
+
+
+2. Advertisment & storage
+3. Routing information base(Routing table)

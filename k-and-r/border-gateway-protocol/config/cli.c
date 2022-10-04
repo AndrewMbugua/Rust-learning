@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 /*
 A cmd line utility to be used with bgp
 --help lists all the options
@@ -24,8 +25,10 @@ int main(int argc, char *argv[]){
 if(argc == 1){
     info();
 }
+int *help_msg = malloc(sizeof(int));
+*help_msg = strcmp(argv[1], "--help");
 
-if(strcmp(argv[1], "--help") == 0) { help(); }
+if(*help_msg == 0){ help(); }
 
 
 }
