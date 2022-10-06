@@ -5,3 +5,11 @@ Neigbor ip
 Neigbor asn
 local asn
 keep alive time
+
+Routing table - make correction
+1. Destination network
+2. Netmask
+3. Gateway
+4. Interface
+5. Metric/hop count - the routing metric of the path through which the packet is to be sent.
+The route will go in the direction of the gateway with the lowest metric.
