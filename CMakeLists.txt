@@ -1,0 +1,95 @@
+cmake_minimum_required(VERSION 3.23)
+project(low_level_learning C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(stm32f103c8_ARM_M3_development/Core/Inc)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST/STM32F1xx)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST/STM32F1xx/Include)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc)
+include_directories(stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy)
+
+add_executable(low_level_learning
+        algorithms_and_data_structures/avx.c
+        algorithms_and_data_structures/IPv4-header-checksum.c
+        algorithms_and_data_structures/lookup_table.c
+        algorithms_and_data_structures/main.c
+        k-and-r/border-gateway-protocol/config/cli.c
+        k-and-r/border-gateway-protocol/tests/test.c
+        k-and-r/border-gateway-protocol/Andrew-test-code.c
+        k-and-r/border-gateway-protocol/Andrew.c
+        k-and-r/border-gateway-protocol/binary_tree.c
+        k-and-r/border-gateway-protocol/routing-table.c
+        k-and-r/crypt_file.c
+        k-and-r/intrinsics.c
+        k-and-r/intrinsics_example.c
+        k-and-r/ip_address.c
+        k-and-r/learning.c
+        network-programming/create_socket.c
+        network-programming/socket_init.c
+        stm32f103c8_ARM_M3_development/Core/Inc/main.h
+        stm32f103c8_ARM_M3_development/Core/Inc/stm32f1xx_hal_conf.h
+        stm32f103c8_ARM_M3_development/Core/Inc/stm32f1xx_it.h
+        stm32f103c8_ARM_M3_development/Core/Src/main.c
+        stm32f103c8_ARM_M3_development/Core/Src/stm32f1xx_hal_msp.c
+        stm32f103c8_ARM_M3_development/Core/Src/stm32f1xx_it.c
+        stm32f103c8_ARM_M3_development/Core/Src/syscalls.c
+        stm32f103c8_ARM_M3_development/Core/Src/sysmem.c
+        stm32f103c8_ARM_M3_development/Core/Src/system_stm32f1xx.c
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_armcc.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_armclang.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_compiler.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_gcc.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_iccarm.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/cmsis_version.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_armv8mbl.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_armv8mml.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm0.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm0plus.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm1.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm23.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm3.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm33.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm4.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_cm7.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_sc000.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/core_sc300.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/mpu_armv7.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/mpu_armv8.h
+        stm32f103c8_ARM_M3_development/Drivers/CMSIS/Include/tz_context.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+        stm32f103c8_ARM_M3_development/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)
