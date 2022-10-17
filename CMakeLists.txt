@@ -24,7 +24,7 @@ add_executable(low_level_learning
         k-and-r/border-gateway-protocol/Andrew.c
         k-and-r/border-gateway-protocol/binary_tree.c
         k-and-r/border-gateway-protocol/routing-table.c
-        k-and-r/child_pipe.c
+        k-and-r/low_level.c
         k-and-r/intrinsics.c
         k-and-r/intrinsics_example.c
         k-and-r/ip_address.c

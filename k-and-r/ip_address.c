@@ -1,4 +1,4 @@
-//generating 32 bit numbers from 0x0 to 0xFF(255)
+//generating 32-bit numbers from 0x0 to 0xFF(255)
 #include<stdio.h>
 
 int main(){
