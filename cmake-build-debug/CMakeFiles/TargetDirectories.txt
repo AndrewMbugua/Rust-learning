@@ -1,0 +1,3 @@
+/home/andrew/Documents/low_level_learning/cmake-build-debug/CMakeFiles/low_level_learning.dir
+/home/andrew/Documents/low_level_learning/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/Documents/low_level_learning/cmake-build-debug/CMakeFiles/rebuild_cache.dir
